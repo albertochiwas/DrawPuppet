@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68CF4B291BB2181C0036F311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CF4B281BB2181C0036F311 /* AppDelegate.swift */; };
+		68CF4B2B1BB2181C0036F311 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CF4B2A1BB2181C0036F311 /* ViewController.swift */; };
+		68CF4B2E1BB2181C0036F311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CF4B2C1BB2181C0036F311 /* Main.storyboard */; };
+		68CF4B301BB2181C0036F311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68CF4B2F1BB2181C0036F311 /* Assets.xcassets */; };
+		68CF4B331BB2181C0036F311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CF4B311BB2181C0036F311 /* LaunchScreen.storyboard */; };
+		68CF4B3E1BB2181C0036F311 /* DibujaMarionetaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CF4B3D1BB2181C0036F311 /* DibujaMarionetaTests.swift */; };
+		68CF4B491BB2181D0036F311 /* DibujaMarionetaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CF4B481BB2181D0036F311 /* DibujaMarionetaUITests.swift */; };
+		68CF4B571BB218520036F311 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CF4B561BB218520036F311 /* DrawingView.swift */; settings = {ASSET_TAGS = (); }; };
+		68CF4B591BB218890036F311 /* ProcessingLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CF4B581BB218890036F311 /* ProcessingLib.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68CF4B3A1BB2181C0036F311 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68CF4B1D1BB2181C0036F311 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68CF4B241BB2181C0036F311;
+			remoteInfo = DibujaMarioneta;
+		};
+		68CF4B451BB2181D0036F311 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68CF4B1D1BB2181C0036F311 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68CF4B241BB2181C0036F311;
+			remoteInfo = DibujaMarioneta;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		68CF4B251BB2181C0036F311 /* DibujaMarioneta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DibujaMarioneta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68CF4B281BB2181C0036F311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68CF4B2A1BB2181C0036F311 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68CF4B2D1BB2181C0036F311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68CF4B2F1BB2181C0036F311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68CF4B321BB2181C0036F311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68CF4B341BB2181C0036F311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68CF4B391BB2181C0036F311 /* DibujaMarionetaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DibujaMarionetaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68CF4B3D1BB2181C0036F311 /* DibujaMarionetaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DibujaMarionetaTests.swift; sourceTree = "<group>"; };
+		68CF4B3F1BB2181C0036F311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68CF4B441BB2181D0036F311 /* DibujaMarionetaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DibujaMarionetaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68CF4B481BB2181D0036F311 /* DibujaMarionetaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DibujaMarionetaUITests.swift; sourceTree = "<group>"; };
+		68CF4B4A1BB2181D0036F311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68CF4B561BB218520036F311 /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		68CF4B581BB218890036F311 /* ProcessingLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessingLib.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68CF4B221BB2181C0036F311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68CF4B361BB2181C0036F311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68CF4B411BB2181D0036F311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68CF4B1C1BB2181C0036F311 = {
+			isa = PBXGroup;
+			children = (
+				68CF4B271BB2181C0036F311 /* DibujaMarioneta */,
+				68CF4B3C1BB2181C0036F311 /* DibujaMarionetaTests */,
+				68CF4B471BB2181D0036F311 /* DibujaMarionetaUITests */,
+				68CF4B261BB2181C0036F311 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68CF4B261BB2181C0036F311 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68CF4B251BB2181C0036F311 /* DibujaMarioneta.app */,
+				68CF4B391BB2181C0036F311 /* DibujaMarionetaTests.xctest */,
+				68CF4B441BB2181D0036F311 /* DibujaMarionetaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68CF4B271BB2181C0036F311 /* DibujaMarioneta */ = {
+			isa = PBXGroup;
+			children = (
+				68CF4B281BB2181C0036F311 /* AppDelegate.swift */,
+				68CF4B561BB218520036F311 /* DrawingView.swift */,
+				68CF4B581BB218890036F311 /* ProcessingLib.swift */,
+				68CF4B2A1BB2181C0036F311 /* ViewController.swift */,
+				68CF4B2C1BB2181C0036F311 /* Main.storyboard */,
+				68CF4B2F1BB2181C0036F311 /* Assets.xcassets */,
+				68CF4B311BB2181C0036F311 /* LaunchScreen.storyboard */,
+				68CF4B341BB2181C0036F311 /* Info.plist */,
+			);
+			path = DibujaMarioneta;
+			sourceTree = "<group>";
+		};
+		68CF4B3C1BB2181C0036F311 /* DibujaMarionetaTests */ = {
+			isa = PBXGroup;
+			children = (
+				68CF4B3D1BB2181C0036F311 /* DibujaMarionetaTests.swift */,
+				68CF4B3F1BB2181C0036F311 /* Info.plist */,
+			);
+			path = DibujaMarionetaTests;
+			sourceTree = "<group>";
+		};
+		68CF4B471BB2181D0036F311 /* DibujaMarionetaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				68CF4B481BB2181D0036F311 /* DibujaMarionetaUITests.swift */,
+				68CF4B4A1BB2181D0036F311 /* Info.plist */,
+			);
+			path = DibujaMarionetaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68CF4B241BB2181C0036F311 /* DibujaMarioneta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68CF4B4D1BB2181D0036F311 /* Build configuration list for PBXNativeTarget "DibujaMarioneta" */;
+			buildPhases = (
+				68CF4B211BB2181C0036F311 /* Sources */,
+				68CF4B221BB2181C0036F311 /* Frameworks */,
+				68CF4B231BB2181C0036F311 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DibujaMarioneta;
+			productName = DibujaMarioneta;
+			productReference = 68CF4B251BB2181C0036F311 /* DibujaMarioneta.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68CF4B381BB2181C0036F311 /* DibujaMarionetaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68CF4B501BB2181D0036F311 /* Build configuration list for PBXNativeTarget "DibujaMarionetaTests" */;
+			buildPhases = (
+				68CF4B351BB2181C0036F311 /* Sources */,
+				68CF4B361BB2181C0036F311 /* Frameworks */,
+				68CF4B371BB2181C0036F311 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68CF4B3B1BB2181C0036F311 /* PBXTargetDependency */,
+			);
+			name = DibujaMarionetaTests;
+			productName = DibujaMarionetaTests;
+			productReference = 68CF4B391BB2181C0036F311 /* DibujaMarionetaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		68CF4B431BB2181D0036F311 /* DibujaMarionetaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68CF4B531BB2181D0036F311 /* Build configuration list for PBXNativeTarget "DibujaMarionetaUITests" */;
+			buildPhases = (
+				68CF4B401BB2181D0036F311 /* Sources */,
+				68CF4B411BB2181D0036F311 /* Frameworks */,
+				68CF4B421BB2181D0036F311 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68CF4B461BB2181D0036F311 /* PBXTargetDependency */,
+			);
+			name = DibujaMarionetaUITests;
+			productName = DibujaMarionetaUITests;
+			productReference = 68CF4B441BB2181D0036F311 /* DibujaMarionetaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68CF4B1D1BB2181C0036F311 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Alberto Pacheco";
+				TargetAttributes = {
+					68CF4B241BB2181C0036F311 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					68CF4B381BB2181C0036F311 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 68CF4B241BB2181C0036F311;
+					};
+					68CF4B431BB2181D0036F311 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 68CF4B241BB2181C0036F311;
+					};
+				};
+			};
+			buildConfigurationList = 68CF4B201BB2181C0036F311 /* Build configuration list for PBXProject "DibujaMarioneta" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68CF4B1C1BB2181C0036F311;
+			productRefGroup = 68CF4B261BB2181C0036F311 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68CF4B241BB2181C0036F311 /* DibujaMarioneta */,
+				68CF4B381BB2181C0036F311 /* DibujaMarionetaTests */,
+				68CF4B431BB2181D0036F311 /* DibujaMarionetaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68CF4B231BB2181C0036F311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CF4B331BB2181C0036F311 /* LaunchScreen.storyboard in Resources */,
+				68CF4B301BB2181C0036F311 /* Assets.xcassets in Resources */,
+				68CF4B2E1BB2181C0036F311 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68CF4B371BB2181C0036F311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68CF4B421BB2181D0036F311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68CF4B211BB2181C0036F311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CF4B571BB218520036F311 /* DrawingView.swift in Sources */,
+				68CF4B2B1BB2181C0036F311 /* ViewController.swift in Sources */,
+				68CF4B591BB218890036F311 /* ProcessingLib.swift in Sources */,
+				68CF4B291BB2181C0036F311 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68CF4B351BB2181C0036F311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CF4B3E1BB2181C0036F311 /* DibujaMarionetaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68CF4B401BB2181D0036F311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CF4B491BB2181D0036F311 /* DibujaMarionetaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68CF4B3B1BB2181C0036F311 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68CF4B241BB2181C0036F311 /* DibujaMarioneta */;
+			targetProxy = 68CF4B3A1BB2181C0036F311 /* PBXContainerItemProxy */;
+		};
+		68CF4B461BB2181D0036F311 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68CF4B241BB2181C0036F311 /* DibujaMarioneta */;
+			targetProxy = 68CF4B451BB2181D0036F311 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68CF4B2C1BB2181C0036F311 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68CF4B2D1BB2181C0036F311 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		68CF4B311BB2181C0036F311 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68CF4B321BB2181C0036F311 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68CF4B4B1BB2181D0036F311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		68CF4B4C1BB2181D0036F311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68CF4B4E1BB2181D0036F311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DibujaMarioneta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.edu.itch.mLearningLab.DibujaMarioneta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		68CF4B4F1BB2181D0036F311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DibujaMarioneta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.edu.itch.mLearningLab.DibujaMarioneta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		68CF4B511BB2181D0036F311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DibujaMarionetaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.edu.itch.mLearningLab.DibujaMarionetaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DibujaMarioneta.app/DibujaMarioneta";
+			};
+			name = Debug;
+		};
+		68CF4B521BB2181D0036F311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DibujaMarionetaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.edu.itch.mLearningLab.DibujaMarionetaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DibujaMarioneta.app/DibujaMarioneta";
+			};
+			name = Release;
+		};
+		68CF4B541BB2181D0036F311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DibujaMarionetaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.edu.itch.mLearningLab.DibujaMarionetaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DibujaMarioneta;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		68CF4B551BB2181D0036F311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DibujaMarionetaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.edu.itch.mLearningLab.DibujaMarionetaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DibujaMarioneta;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68CF4B201BB2181C0036F311 /* Build configuration list for PBXProject "DibujaMarioneta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68CF4B4B1BB2181D0036F311 /* Debug */,
+				68CF4B4C1BB2181D0036F311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68CF4B4D1BB2181D0036F311 /* Build configuration list for PBXNativeTarget "DibujaMarioneta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68CF4B4E1BB2181D0036F311 /* Debug */,
+				68CF4B4F1BB2181D0036F311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		68CF4B501BB2181D0036F311 /* Build configuration list for PBXNativeTarget "DibujaMarionetaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68CF4B511BB2181D0036F311 /* Debug */,
+				68CF4B521BB2181D0036F311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		68CF4B531BB2181D0036F311 /* Build configuration list for PBXNativeTarget "DibujaMarionetaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68CF4B541BB2181D0036F311 /* Debug */,
+				68CF4B551BB2181D0036F311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68CF4B1D1BB2181C0036F311 /* Project object */;
+}
