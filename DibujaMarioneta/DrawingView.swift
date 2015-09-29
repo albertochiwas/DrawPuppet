@@ -9,13 +9,14 @@
 import Foundation
 import UIKit
 
-typealias color = UIColor
+typealias MPColor = UIColor
 
 class DrawingView: UIView {
     
-    override func drawRect(rect: CGRect)
+    override func drawRect(r: CGRect)
     {
-        ellipseFill((10,10,100,100), color(200), 6)
+        ellipseFill(rect: (x: 10, y: 10, width: 100, height: 100), fill: MPColor(200), width: 6)
+        line(10,10,120,120)
     }
     
 } // DrawingView class

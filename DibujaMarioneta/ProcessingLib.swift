@@ -11,7 +11,8 @@ import UIKit
 import Darwin
 
 
-typealias Rect = (Int, Int, Int, Int)
+typealias  MPRect = (x: Int, y: Int, width: Int, height: Int)
+typealias MPPoint = (x: Int, y: Int)
 
 extension UIColor
 {
@@ -37,7 +38,7 @@ func map(value:Float, start1:Float, stop1:Float, start2:Float, stop2:Float) -> F
 }
 
 
-func random( min: Int, max:Int ) -> Int
+func random( min: Int, max: Int ) -> Int
 {
     return min + Int(arc4random_uniform(UInt32(max - min + 1)))
 }
@@ -50,17 +51,17 @@ func radians( degrees: Float ) -> Float {
 }
 
 
-func line(x1: CGFloat, y1: CGFloat, x2: CGFloat, y2: CGFloat, width: CGFloat = 0) {
-    line(CGPoint(x: x1, y: y1), end: CGPoint(x: x2, y: y2), width: width)
+func line(x1: Int, _ y1: Int, _ x2: Int, _ y2: Int, _ width: Int = 2) {
+    line(MPPoint(x: x1, y: y1), end: MPPoint(x: x2, y: y2), width: width)
 }
 
-func line(start: CGPoint, end: CGPoint, width: CGFloat = 0) {
+func line(start: MPPoint, end: MPPoint, width: Int = 2) {
     let path = UIBezierPath()
 //    path.lineCapStyle = kCGLineCapRound
-    path.moveToPoint(start)
-    path.addLineToPoint(end)
+    path.moveToPoint(CGPointMake(CGFloat(start.x),CGFloat(start.y)))
+    path.addLineToPoint(CGPointMake(CGFloat(end.x),CGFloat(end.y)))
     if width > 0 {
-        path.lineWidth = width
+        path.lineWidth = CGFloat(width)
     }
     path.stroke()
 }
@@ -98,23 +99,17 @@ func ellipse( rect: CGRect, width: CGFloat = 0 ) {
     path.stroke()
 }
 
-func ellipseFill( rect: CGRect, fill: UIColor = UIColor.blackColor(), width: CGFloat = 0 ) {
-    let path = UIBezierPath( ovalInRect: rect )
-    if width > 0 {
-        path.lineWidth = width
-        path.stroke()
-    }
-    fill.setFill()
-    path.fill()
+func ellipseFill( rect rect: MPRect, fill: UIColor = UIColor.blackColor(), width: Int = 0 ) {
+    ellipseFill(rect, fill, width)
 }
 
-func ellipseFill( rect: Rect, _ fill: UIColor = UIColor.blackColor(), _ width: CGFloat = 0 ) {
-    let path = UIBezierPath( ovalInRect: CGRectMake(CGFloat(rect.0), CGFloat(rect.1), CGFloat(rect.2), CGFloat(rect.3)) )
-    if width > 0 {
-        path.lineWidth = width
+func ellipseFill( r: MPRect, _ f: UIColor = UIColor.blackColor(), _ w: Int = 0 ) {
+    let path = UIBezierPath( ovalInRect: CGRectMake(CGFloat(r.x), CGFloat(r.y), CGFloat(r.width), CGFloat(r.height)) )
+    if w > 0 {
+        path.lineWidth = CGFloat(w)
         path.stroke()
     }
-    fill.setFill()
+    f.setFill()
     path.fill()
 }
 
