@@ -49,9 +49,10 @@ func radians( degrees: Float ) -> Float {
     return Float( degrees ) / PI_RADIANS
 }
 
+//typealias Punto = (Int , Int)
 
 func line(x1: CGFloat, y1: CGFloat, x2: CGFloat, y2: CGFloat, width: CGFloat = 0) {
-    line(CGPoint(x: x1, y: y1), end: CGPoint(x: x2, y: y2), width: width)
+    line(CGPoint(x: x1,y: y1), end: CGPoint(x: x2, y: y2), width: width)
 }
 
 func line(start: CGPoint, end: CGPoint, width: CGFloat = 0) {
@@ -67,20 +68,20 @@ func line(start: CGPoint, end: CGPoint, width: CGFloat = 0) {
 
 // CASOS RECT: 1) STROKE ONLY; 2) FILL ONLY; 3) FILL & STROKE; +4) ROUND RECT?
 
-func rectangle( rect: CGRect, width: CGFloat = 0, radius: CGFloat = 0 ) { // Stroke only
+func rectangle( rect: Rect, width: CGFloat = 0, radius: CGFloat = 0 ) { // Stroke only
     let path = radius > 0 ?
-        UIBezierPath( roundedRect: rect, cornerRadius: radius ) :
-        UIBezierPath( rect: rect )
+        UIBezierPath( roundedRect: CGRectMake(CGFloat(rect.0), CGFloat(rect.1), CGFloat(rect.2), CGFloat(rect.3)), cornerRadius: radius ) :
+        UIBezierPath( rect: CGRectMake(CGFloat(rect.0), CGFloat(rect.1), CGFloat(rect.2), CGFloat(rect.3)) )
     if width > 0 {
         path.lineWidth = width
     }
     path.stroke()
 }
 
-func rectangleFill( rect: CGRect, fill: UIColor = UIColor.blackColor(), width: CGFloat = 0, radius: CGFloat = 0 ) { // Fill & stroke?
+func rectangleFill( rect: Rect, fill: UIColor = UIColor.blackColor(), width: CGFloat = 0, radius: CGFloat = 0 ) { // Fill & stroke?
     let path = radius > 0 ?
-        UIBezierPath( roundedRect: rect, cornerRadius: radius ) :
-        UIBezierPath( rect: rect )
+        UIBezierPath( roundedRect: CGRectMake(CGFloat(rect.0), CGFloat(rect.1), CGFloat(rect.2), CGFloat(rect.3)) , cornerRadius: radius ) :
+        UIBezierPath( rect: CGRectMake(CGFloat(rect.0), CGFloat(rect.1), CGFloat(rect.2), CGFloat(rect.3))  )
     if width > 0 {
         path.lineWidth = width
         path.stroke()
@@ -90,23 +91,15 @@ func rectangleFill( rect: CGRect, fill: UIColor = UIColor.blackColor(), width: C
 }
 
 
-func ellipse( rect: CGRect, width: CGFloat = 0 ) {
-    let path = UIBezierPath( ovalInRect: rect )
+func ellipse( rect: Rect, width: CGFloat = 0 ) {
+    let path = UIBezierPath( ovalInRect: CGRectMake(CGFloat(rect.0), CGFloat(rect.1), CGFloat(rect.2), CGFloat(rect.3)) )
     if width > 0 {
         path.lineWidth = width
     }
     path.stroke()
 }
 
-func ellipseFill( rect: CGRect, fill: UIColor = UIColor.blackColor(), width: CGFloat = 0 ) {
-    let path = UIBezierPath( ovalInRect: rect )
-    if width > 0 {
-        path.lineWidth = width
-        path.stroke()
-    }
-    fill.setFill()
-    path.fill()
-}
+
 
 func ellipseFill( rect: Rect, _ fill: UIColor = UIColor.blackColor(), _ width: CGFloat = 0 ) {
     let path = UIBezierPath( ovalInRect: CGRectMake(CGFloat(rect.0), CGFloat(rect.1), CGFloat(rect.2), CGFloat(rect.3)) )
